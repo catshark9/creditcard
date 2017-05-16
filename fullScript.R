@@ -1,6 +1,6 @@
 rm(list = ls())
 
-setwd('C:/Users/Jon Kelley/Desktop/CreditCards')
+setwd('..')
 
 suppressMessages(library(rvest))
 suppressMessages(library(stringr))
@@ -11,7 +11,7 @@ suppressMessages(library(readr))
 options(stringsAsFactors = FALSE)
 
 #source('part 1.R') #run only on the 5th of every month
-rates <- read_csv("C:/Users/Jon Kelley/Desktop/CreditCards/rates.csv")
+rates <- read_csv("rates.csv")
 rates<-as.data.frame(rates)
 source('chase.R')
 source('barclay.R')
@@ -28,7 +28,7 @@ source('email.R')
 # library('RPostgreSQL')
 # pg = dbDriver("PostgreSQL")
 # # run postgresql by typing in cmd: postgres -D "C:\Program Files\PostgreSQL\9.6\data"
-# con = dbConnect(pg, user="jk", password="admin",
+# con = dbConnect(pg, user="user", password="password",
 #                 host="localhost", port=5432, dbname="CreditCards")
 # 
 # Encoding(cards$IntroOffer) <- "UTF-8"
