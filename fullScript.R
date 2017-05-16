@@ -10,8 +10,8 @@ suppressMessages(library(readr))
 
 options(stringsAsFactors = FALSE)
 
-#source('part 1.R') #run only on the 5th of every month
-rates <- read_csv("rates.csv")
+source('part 1.R') #run only on the 5th of every month
+#rates <- read_csv("rates.csv")
 rates<-as.data.frame(rates)
 source('chase.R')
 source('barclay.R')
@@ -21,7 +21,7 @@ source('amexbus.R')
 source('BOA.R')
 source('US.R')
 source('part 2.R')
-source('email.R')
+#source('email.R')
 
 
 
